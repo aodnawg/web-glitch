@@ -89,7 +89,10 @@ float noise(vec3 p){
     // float xNoise2 = noise(vec3(.1, texUv.y*150., time)).1;
     // texUv.x -= xNoise;
     // float g = texture2D(uSampler, texUv2).y;
-    vec4 color = pow(vec4(r, g, b, 1.), vec4(1.2, 1.1, 4.8, 1.));
+    vec4 color = pow(vec4(r, g, b, 1.), vec4(1.2,
+      1.1,
+      4.8,
+      1.));
     vec4 color2 = pow(vec4(r, g, b, 1.), vec4(1.2, 1.1, 4.8, 1.));
     float rrr = color2.x + color2.y + color2.z;
     rrr /= 3.5;
@@ -105,11 +108,6 @@ const sketch = (p: P5) => {
   p.setup = () => {
     p.createCanvas(width, height, p.WEBGL);
     videoImage = p.createCapture(p.VIDEO);
-    // theShader = p.createShader(vs, fs);
-    // theShader.setUniform("u_resolution", [width, height]);
-    // theShader.setUniform("u_time", 0);
-    // p.quad(-1, -1, -1, 1, 1, 1, 1, -1);
-    // // videoImage.hide();
 
     p.noStroke();
     theShader = p.createShader(vs, fs);
