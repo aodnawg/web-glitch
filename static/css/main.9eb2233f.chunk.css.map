@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,QACE,WAAY,CACZ,YACF","file":"main.9eb2233f.chunk.css","sourcesContent":[".canvas {\n  width: 100vw;\n  height: 100vh;\n}\n"]}
